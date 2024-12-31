@@ -1,1 +1,51 @@
-site_name: My Docs
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: 日耀青杨的笔记本
+site_url: https://qfby-WY.github.io/PersonalNote
+
+theme:
+    name: material
+    language: zh
+    palette:
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+              icon: material/brightness-auto
+              name: Switch to light mode
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: cyan
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: black
+          toggle:
+              icon: material/brightness-4
+              name: Switch to system preference
+    font: false
+    icon:
+        logo: material/book-education
+    features:
+        - navigation.tabs
+        - navigation.top
+        - navigation.indexes
+
+markdown_extensions:
+    - pymdownx.arithmatex:
+          generic: true
+
+extra_css:
+    - https://cdn.iocdn.cc/npm/@fontsource/crimson-pro@5.1.1/index.min.css
+    - https://cdn.iocdn.cc/npm/@fontsource/jetbrains-mono@5.1.2/index.min.css
+    - https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/lxgwwenkaimonoscreen/result.css
+    - https://unpkg.com/katex@0/dist/katex.min.css
+    - stylesheets/custom.css
+
+extra_javascript:
+    - stylesheets/katex.js
+    - https://unpkg.com/katex@0/dist/katex.min.js
+    - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
